@@ -21,8 +21,6 @@
   import { TouchZoom, INITIAL_ZOOM } from "./action/touchZoom";
   import { arrangeNewTerminal } from "./arrange";
   import { settings } from "./settings";
-  import SignedOut from "clerk-sveltekit/client/SignedOut.svelte";
-  import Login from "./ui/Login.svelte";
 
   export let id: string;
 
@@ -546,7 +544,3 @@
     {/each}
   </div>
 </main>
-
-<SignedOut>
-  <Login {id} />
-</SignedOut>
